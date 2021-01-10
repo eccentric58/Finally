@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= t(:content) %>:</strong>
+  <%= @message.content %>
+</p>
+
+<p>
+  <strong><%= t(:user) %>:</strong>
+  <%= @message.user_id %>
+</p>
+
+<p>
+  <strong><%= t(:room) %>:</strong>
+  <%= @message.room_id %>
+</p>
+
+<%= link_to t(:edit), edit_message_path(@message) %> |
+<%= link_to t(:back), messages_path %>
